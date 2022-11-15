@@ -2,7 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter, Routes, Route,} from "react-router-dom";
+import {
+  HashRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 import "./index.module.scss"
 import SomeExampleComponent from './Components/example/someExampleComponent';
 import MyFirstComponent from './Components/myFirstComponent';
@@ -13,14 +17,14 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-  <BrowserRouter>
-  <Navbar />
+  <Router basename='/portfolio'>
+    <Navbar />
     <Routes>
       <Route path='/' element={<App />}></Route>
       <Route path='example' element={<SomeExampleComponent />} />
       <Route path='/first' element={<MyFirstComponent />} />
     </Routes>
-  </BrowserRouter>
+  </Router>
 </React.StrictMode>
 );
 
