@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import ClickCount from './Components/example/clickCount'
 
-function App() {
+import SomeExampleComponent from './Components/example/someExampleComponent'
+import MyFirstComponent from './Components/myFirstComponent'
+
+
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MyFirstComponent />
+      <SomeExampleComponent />
+      <ClickCount />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
