@@ -17,11 +17,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-  <Router basename='/portfolio'>
+  <Router>
     <Navbar />
     <Routes>
       <Route path='/' element={<App />}></Route>
-      <Route path='example' element={<SomeExampleComponent />} />
+      <Route path='/example' element={<SomeExampleComponent />} />
       <Route path='/first' element={<MyFirstComponent />} />
     </Routes>
   </Router>
