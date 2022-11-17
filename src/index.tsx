@@ -8,9 +8,11 @@ import {
   Route,
 } from "react-router-dom";
 import "./index.module.scss"
-import SomeExampleComponent from './Components/example/someExampleComponent';
-import MyFirstComponent from './Components/myFirstComponent';
+//import Main from './Components/main/main';
 import Navbar from './Components/navbar/navbar';
+import Projects from './Components/projects/projects';
+import Cv from './Components/cv/cv';
+import Contact from './Components/contact/contact';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -21,8 +23,9 @@ root.render(
     <Navbar />
     <Routes>
       <Route path='/' element={<App />}></Route>
-      <Route path='/example' element={<SomeExampleComponent />} />
-      <Route path='/first' element={<MyFirstComponent />} />
+      <Route path='/projects' element={<Projects />} />
+      <Route path='/cv' element={<Cv />} />
+      <Route path='/contact' element={<Contact />} />
     </Routes>
   </Router>
 </React.StrictMode>
