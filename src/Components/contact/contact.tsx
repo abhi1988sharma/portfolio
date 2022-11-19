@@ -9,7 +9,32 @@ const Contact: React.FC<ContactProps> = () => {
   return (
     <div className={styles.container}>
     <h1>Contact</h1>
-    <p>My supercool component</p>
+    <p>My supercool component
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    </p>
   </div>
   )
 }

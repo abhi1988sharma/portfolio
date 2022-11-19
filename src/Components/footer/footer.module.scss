@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin-top: 100vh auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 50px;
+    background-color:black;
+    
+    width: 100%;
+}
+.footerLinks{
+text-decoration: none;
+font-size: 20px;
+padding: 0 10px;
+cursor: pointer;
+color: whitesmoke;
+
+}

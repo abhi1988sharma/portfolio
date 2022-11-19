@@ -13,6 +13,8 @@ import Navbar from './Components/navbar/navbar';
 import Projects from './Components/projects/projects';
 import Cv from './Components/cv/cv';
 import Contact from './Components/contact/contact';
+import Footer from './Components/footer/footer';
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -27,6 +29,7 @@ root.render(
       <Route path='/cv' element={<Cv />} />
       <Route path='/contact' element={<Contact />} />
     </Routes>
+    <Footer />
   </Router>
 </React.StrictMode>
 );
