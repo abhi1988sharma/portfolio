@@ -35,7 +35,8 @@ return(
 
       </div>
       <div className={styles.contactMe}>
-        <button className={styles.button}>Contact Me</button>
+       <a href="https://abhi1988sharma.github.io/portfolio/#/contact"> 
+       <button className={styles.button}>Contact Me</button></a>
       </div>
       <div className={styles.homeImage}>
         
