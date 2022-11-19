@@ -35,7 +35,7 @@ return(
 
       </div>
       <div className={styles.contactMe}>
-        <button className={styles.button} ref="https://abhi1988sharma.github.io/portfolio/#/contact">Contact Me</button>
+        <button className={styles.button}>Contact Me</button>
       </div>
       <div className={styles.homeImage}>
         
