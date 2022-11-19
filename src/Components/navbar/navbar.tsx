@@ -12,7 +12,7 @@ const Navbar: React.FC<Navbarprops> = () => {
   const [isPhone, setIsPhone] = useState(false);
   return (
     <nav className={styles.container}>
-      <h3 className={styles.logo}>logo</h3>
+      <a className={styles.logo} href= "https://abhi1988sharma.github.io/portfolio/#/">AS</a>
       <ul className={isPhone? styles.navlinksphone: styles.navlinks}
       onClick ={()=> setIsPhone (false)}>
       <Link className = {styles.home} to="/"><li>Home</li></Link> 
