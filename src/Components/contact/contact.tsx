@@ -1,42 +1,25 @@
 import React from "react";
-import styles from "./contact.module.scss"
+import style from "./contact.module.scss";
 
-type ContactProps = {
+const Contact: React.FC = () => {
 
-}
-
-const Contact: React.FC<ContactProps> = () => {
   return (
-    <div className={styles.container}>
-    <h1>Contact</h1>
-    <p>My supercool component
+    <form className={style.form}>
+      <h1>Contact Me 🤳</h1>
 
+      <label>Name</label>
+      <input placeholder="Name"/>
 
+      <label>Email</label>
+      <input
+        placeholder="Email"/>
 
+      <label>Message</label>
+      <textarea placeholder="Message"></textarea>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-    </p>
-  </div>
-  )
-}
+      <button type="submit">Send</button>
+    </form>
+  );
+};
 
 export default Contact;
