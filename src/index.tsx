@@ -10,10 +10,12 @@ import {
 import "./index.module.scss"
 //import Main from './Components/main/main';
 import Navbar from './Components/navbar/navbar';
-import Projects from './Components/projects/projects';
 import Cv from './Components/cv/cv';
 import Contact from './Components/contact/contact';
 import Footer from './Components/footer/footer';
+import './index.module.scss';
+
+import MyGithubRepos from './Components/github/myGithubRepo';
 
 
 const root = ReactDOM.createRoot(
@@ -25,7 +27,7 @@ root.render(
     <Navbar />
     <Routes>
       <Route path='/' element={<App />}></Route>
-      <Route path='/projects' element={<Projects />} />
+      <Route path='/projects' element={<MyGithubRepos />} /> 
       <Route path='/cv' element={<Cv />} />
       <Route path='/contact' element={<Contact />} />
     </Routes>

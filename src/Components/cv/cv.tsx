@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import styles from "./cv.module.scss"
+import CvItem from "./cvItem";
 
 
 
@@ -11,19 +12,13 @@ const Cv: React.FC = () => {
       <div className={styles.profile}>
         <img className={styles.profilepic} src="images/Abhishek Sharma.png" alt="Abhishek picture"></img>
         <h2 className={styles.heading2}>Hello.</h2>
-        <p>Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna. Non auctor, montes nulla distinctio.</p>
+        <p>Recently added a skill of 3D game designing & making a game using Unity Game Engine and C# scripting language. Also skilled in using Github. I have great understanding of computer fundamentals and Cisco networking. Completed PYTHON FOR DATA ANALYSIS training from THE SHORTCUT Helsinki. Developed skills in data analysis by using Python and also some basic codes in MySql workbench and shell. Experienced Marketing Specialist with a demonstrated history of working in the marketing and advertising & sales industry. Skilled in Business development and business Management, Customer Relationship Management, Market Research, Predictive Analytics, and Product Marketing. Strong marketing professional with a PGDM focused in Marketing from IILM, Greater Noida.
+
+</p>
       </div>
-      <hr className={styles.ruler}></hr>
-      <div className={styles.skills}>
-        <h2 className={styles.heading2}>My Skills.</h2>
-        <div className={styles.skillRow}>
-          <img className={styles.SkillImage} src="https://cdn-icons-png.flaticon.com/512/3080/3080443.png" alt="Skill picture"></img>
-          <h3 className={styles.heading3}>Lorem & Ipsum</h3>
-          <p className={styles.para}>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
-        </div>
-       
+      <CvItem />
+      
       </div>
-  </div>
   </div>
   
   )
