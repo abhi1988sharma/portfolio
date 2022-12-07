@@ -120,3 +120,20 @@ label {
   }
 }
 
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skillCircle {
+  width: 1.1em;
+  height: 1.1em;
+  border-radius: 50%;
+  border: 3px solid grey;
+}
+
+.skillCircleSelected {
+  background-color: gold;
+}
