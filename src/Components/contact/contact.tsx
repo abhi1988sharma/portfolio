@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
 
   return (
     <form className={style.form} onSubmit={(e) => send(e)}>
-      <h1>Contact Me 🤳</h1>
+      <div className={style.contact}>Contact Me 🤳</div>
 
       <label>Name</label>
       <input placeholder="Name"

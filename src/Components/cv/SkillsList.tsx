@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import Skill from "./Skill";
 
 
-const SkillsList = () => {
+
+
+const SkillsList: React.FC  = () => {
+  
   const [skills] = useState([
     { name: "Finish", level: 3 },
     { name: "English", level: 5 },
