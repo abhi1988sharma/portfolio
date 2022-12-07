@@ -14,7 +14,6 @@ import Cv from './Components/cv/cv';
 import Contact from './Components/contact/contact';
 import Footer from './Components/footer/footer';
 import './index.module.scss';
-
 import MyGithubRepos from './Components/github/myGithubRepo';
 
 

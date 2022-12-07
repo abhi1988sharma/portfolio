@@ -1,27 +1,84 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
-import styles from "./cv.module.scss"
-import CvItem from "./cvItem";
+import style from "./cv.module.scss";
 
 
+import InfoCard from "./InfoCard";
+import experience from "./experience";
+import CVComponent from "./CVComponent";
+import education from "./education";
+import SkillsList from "./SkillsList";
+
+const info = {
+  imgSrc: "./images/Abhishek Sharma.png",
+  name: "Abhishek Sharma",
+  profession: "Aspiring web developer",
+  address: "Helsinki",
+  phone: +358405040664,
+  email: "abhi1988.sharma@gmail.com",
+  about:
+    "My current focus is to become a Web Developerexpert. kjbabvjbnkjvnzmx jbnjknzkvnmkzxbnkv nnjkvnkznkjv knkjnkjvnkzx ksnkdvnnzkvnzknvds knkvnkjznk. My current focus is to become a Web Developerexpert. kjbabvjbnkjvnzmx jbnjknzkvnmkzxbnkv nnjkvnkznkjv knkjnkjvnkzx ksnkdvnnzkvnzknvds knkvnkjznk"
+};
 
 const Cv: React.FC = () => {
-  return (
-   <div className={styles.cv}>
-   <div className={styles.middleContainer}>
-      <div className={styles.profile}>
-        <img className={styles.profilepic} src="images/Abhishek Sharma.png" alt="Abhishek picture"></img>
-        <h2 className={styles.heading2}>Hello.</h2>
-        <p>Recently added a skill of 3D game designing & making a game using Unity Game Engine and C# scripting language. Also skilled in using Github. I have great understanding of computer fundamentals and Cisco networking. Completed PYTHON FOR DATA ANALYSIS training from THE SHORTCUT Helsinki. Developed skills in data analysis by using Python and also some basic codes in MySql workbench and shell. Experienced Marketing Specialist with a demonstrated history of working in the marketing and advertising & sales industry. Skilled in Business development and business Management, Customer Relationship Management, Market Research, Predictive Analytics, and Product Marketing. Strong marketing professional with a PGDM focused in Marketing from IILM, Greater Noida.
-
-</p>
-      </div>
-      <CvItem />
-      
-      </div>
-  </div>
   
-  )
-}
+  const educationComponent = education.map(item => <CVComponent item={item} />);
 
+  const experienceComponent = experience.map(item => (
+    <CVComponent item={item} />
+  ));
+
+  return (
+    <div>
+      <main>
+        <section className={style.detailContainer}>
+          <section className={style.info}>
+            <InfoCard info={info} />
+            <h2>
+              <i className="fa fa-cogs" /> Skills
+            </h2>
+            <SkillsList />
+           
+          </section>
+
+          <section className={style.education}>
+            <h1>
+              {" "}
+              <i className="fa fa-university" /> Education{" "}
+            </h1>
+            {educationComponent}
+          </section>
+          <hr />
+          <section className={style.work}>
+            <h1>
+              <i className="fa fa-briefcase fa" /> Work Experience{" "}
+            </h1>
+            {experienceComponent}
+          </section>
+          
+          <section className={style.other}>
+            <h1>
+              {" "}
+              <i className="fa fa-desktop" /> Other Interests{" "}
+            </h1>
+            <h3> Ayurveda</h3>
+            <ul>
+              <li>
+                <i className="fa fa-book" /> Meditation
+              </li>
+              <li>
+                <i className="fa fa-book" /> Yoga
+              </li>
+            </ul>
+            <h3>Sustainability</h3>
+            <ul>
+              <li>Reducing waste</li>
+              <li>Build a sustainable wardrobe</li>
+            </ul>
+          </section>
+        </section>
+      </main>
+     
+    </div>
+  );
+}
 export default Cv;

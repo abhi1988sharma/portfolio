@@ -1,67 +1,122 @@
-.cv{color: #40514E;
-    margin: 0;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family:"Merriweather", serif; 
-  }
-  
-  .heading1{margin: 50px auto 0 auto;
-    font-family:"Sacramento", cursif;
-    font-size: 5.625rem;
-    color: #66BFBF;
-  }
-  .heading2{color: #66BFBF;
-    font-family:"Montserrat", sans-serif;
-    font-size: 2.5rem;
-    font-weight: normal;
-  }
-  .heading3{font-family:"Montserrat", sans-serif;
-  color:  #11999E;}
-  
 
+/*body {
+  line-height: 1.3em;
+  background-image: url(https://dollarfootage.com/wp-content/uploads/2017/08/Abstract-business-background-newsroom-geometric-futuristic-field-white-with-black-lines-4-img2.jpg);
+  background: cover;
+}*/
 
-  para {line-height: 2;}
-  
-  .ruler{
-  border-top: 10px dotted #EAF6F6;
-  width: 40%;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  margin-left: 30%;
-  margin-right: 20%;
+.name {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #dbd9d9;
+}
+.detailContainer {
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  max-width: 100%;
+  height: 90%;
+  margin: auto;
+  grid-template-areas:
+  "info education" 
+  "info work"
+  "info other";
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px; 
+}
+
+.info {
+  color: #dbd9d9;
+  margin: 10px;
+  padding: 5%;
+  grid-area: info;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background-color: rgb(39, 138, 136);
+}
+img {
+  width: 100%;
+}
+.work {
+  color: #403f3f;
+  margin: 10px;
+  padding: 0 5%;
+  grid-area: work;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background-color: rgb(194, 237, 247);
 
 }
-  
-.profilepic{height: 150px;
-  width: 150px;}
-  
-  
-  .middleContainer{color: white;}
-  
- .SkillImage{border-radius: 50%;
-    float: left;
-  width: 25%;
-  margin-right: 30px;}
-  
-  .skillImage1{
-    border-radius: 50%;
-    float: right;
-    width: 25%;
-    margin-left: 30px;
-  
-  }
-  
-  .skillRow{margin: auto 400px 100px 400px;
-    text-align: left;}
-   
-  .profile{margin: 50px auto 50px auto;
-    width: 40%;
-  }
-  
-  
 
-  
- 
+.education {
+  color: #403f3f;
+  margin: 10px;
+  padding: 0 5%;
+  grid-area: education;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background-color: rgb(194, 237, 247);
+}
+.other {
+  color: #403f3f;
+  margin: 10px;
+  padding: 0 5%;
+  grid-area: other;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background-color: rgb(194, 237, 247);
+}
+
+/* Layout on small devices/viewports. */
+@media screen and (max-width: 768px) {
+  .detailContainer {
+    grid-template-areas:
+      "info"
+      "work"
+      "education"
+      "other";
+    grid-template-columns: 1fr;
+  }
+}
+figure {
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+img {
+  border-radius: 1%;
+  transition: transform 2s;
+  filter: grayscale(90%);
+}
+img:hover {
+  filter: grayscale(10%);
+  transform: scale(1.09);
+}
+
+h1 {
+  color: #403f3f;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+  margin-bottom: 20px;
+  font-weight: 400;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.29);
+}
+
+h2 h3 h4 {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.29);
+  padding: 0 !important;
+  margin: 0 !important;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+label {
+  padding-right: 10px;
+  font-size: 1rem;
+}
+
+@media print {
+  .detailContainer {
+    height: 30508 px;
+    width: 2480px;
+  }
+}
+
