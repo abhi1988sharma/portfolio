@@ -18,8 +18,8 @@ const experience = [
   },
   {
     id: 1,
-    startDate: "April 2013",
-    endDate: "March 2017",
+    startDate: "Sept 2011",
+    endDate: "Aug 2012",
     title: "Sr. sales Manager / Bricks and Homes Real Estate Investment Advisory pvt. ltd.",
     description:
       "Revenue generation activities, Sales & Distribution, Order processing and documentation, Client relationships, lead generation through team, Team management, vendor management, process planning and development for sales team. Customer tracking and segmentation.",

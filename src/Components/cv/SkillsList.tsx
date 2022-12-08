@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import  React, { useState } from "react";
 import Skill from "./Skill";
 
 
@@ -9,7 +9,6 @@ const SkillsList: React.FC  = () => {
   const [skills] = useState([
     { name: "Finish", level: 3 },
     { name: "English", level: 5 },
-    { name: "Swedish", level: 3 },
     { name: "HTML5", level: 4 },
     { name: "CSS", level: 3 },
     { name: "JS", level: 4 },
@@ -25,7 +24,7 @@ const SkillsList: React.FC  = () => {
   return (
     <div>
       {skills.map(skill => (
-        <Skill name={skill.name} level={skill.level}  />
+        <Skill name={skill.name} level={skill.level}   />
       ))}
     </div>
   );

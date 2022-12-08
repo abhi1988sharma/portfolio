@@ -1,22 +1,30 @@
 import React from "react";
-import Style from "./skills.module.scss";
+import  "./skills.css";
 
 
-const CircleFull = ({ value = true }) => {
-  return <div className={value ? "skillcircleselected" : "skillCircle"} />;
+const CircleFull: React.FC<{ value: boolean }>
+  = ({ value = true }) => {
+  return <div className={value ? "skillCircle selected" : "skillCircle"} />;
 };
 
-const Skill = ({ name, level }: {name: string; level: number}) => {
+
+type SkillProps = {
+  name: string;
+  level: number;
+  
+}
+
+const Skill: React.FC<SkillProps> = ({ name, level, }) => {
   return (
-    <div className={Style.displaySkills}>
+    <div >
       <h4>{name}</h4>
-      <div className={Style.skills}>
+      <div className="skills">
         {[1, 2, 3, 4, 5].map(i => (
           <CircleFull key={i} value={i <= level} />
         ))}
       </div>
     </div>
   );
-};
+}
 
 export default Skill;

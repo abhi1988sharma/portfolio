@@ -1,6 +1,6 @@
 import React from "react";
 
-function CVComponent(props: { item: { title: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; startDate: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; endDate: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; description: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; }; }) {
+function CVComponent(props: { item: { title: string; startDate: string ; endDate: string ; description: string; }} ) {
   return (
     <div>
       <h3> {props.item.title}</h3>
@@ -13,3 +13,4 @@ function CVComponent(props: { item: { title: string | number | boolean | React.R
   );
 }
 export default CVComponent;
+
