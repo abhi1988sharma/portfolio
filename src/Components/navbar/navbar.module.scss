@@ -14,11 +14,11 @@
 .logo{
   font-size: 34px;
   border-radius: 50%;
-  border: 7px solid #fff;
+  border: 7px solid rgb(194, 237, 247);
   width: 60px;
   height: 60px;
  text-decoration: none;
- color: white;
+ color: rgb(194, 237, 247);
  
 }
 .navlinks{
@@ -48,9 +48,10 @@
 
     .navlinksphone{
         position: absolute;
+        z-index: 1;
         display: block;
         list-style: none;
-        background-color: #005469;
+        background-color: rgb(27, 96, 111);
         left: 0;
         top: 75px;
         transition: all 0.5s ease-out;
