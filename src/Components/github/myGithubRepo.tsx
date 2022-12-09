@@ -54,7 +54,7 @@ textAlign: 'center'
       <CardMedia
         component="img"
         height="80"
-        image="/images/projectBack.gif"
+        image="/images/ProjectBack.gif"
         alt="Projects Pic"
       />
       <CardContent >
