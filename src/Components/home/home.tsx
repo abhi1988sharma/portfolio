@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styles from "./home.module.scss";
 import Typewriter from "typewriter-effect";
+//import DateTime from "./dateTime";
+
 
 
 
@@ -28,7 +30,7 @@ return(
           strings:[
             "Aspiring Developer.",
             "Software enthusiast.",
-            "Experienced proffesional."
+            "Experienced professional."
           ], 
 
         }} />
@@ -37,7 +39,10 @@ return(
       <div className={styles.contactMe}>
        <a href="https://abhi1988sharma.github.io/portfolio/#/contact"> 
        <button className={styles.button}>Contact Me</button></a>
+       
       </div>
+
+    
       <div className={styles.homeImage}>
         
 

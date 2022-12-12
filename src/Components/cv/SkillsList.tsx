@@ -7,11 +7,11 @@ import Skill from "./Skill";
 const SkillsList: React.FC  = () => {
   
   const [skills] = useState([
-    { name: "Finish", level: 3 },
+    { name: "Finnish", level: 3 },
     { name: "English", level: 5 },
     { name: "HTML5", level: 4 },
     { name: "CSS", level: 3 },
-    { name: "JS", level: 4 },
+    { name: "Javascript", level: 4 },
     { name: "Typescript", level: 3 },
     { name: "React", level: 3 },
     { name: "Bootstrap", level: 4 },
