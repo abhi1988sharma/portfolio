@@ -34,6 +34,7 @@ textAlign: 'center'
 
 }}> My github projects</h2>
   <div style={{
+    //height:'100vh',
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
@@ -42,7 +43,7 @@ textAlign: 'center'
     columnGap: '60px',
     marginTop: '60px', 
     marginBottom: 'auto',
-    paddingBottom: '60px'
+    paddingBottom: '600px'
     
 
     

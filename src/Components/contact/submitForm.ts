@@ -1,7 +1,7 @@
 import { collection, addDoc } from "firebase/firestore";
 import { FirebaseServices } from "../../firebase/firebaseService";
 
-export const handleSubmit = async (
+export const db = async (
     event: React.FormEvent<HTMLFormElement>,
     data: any // TODO type your data,
 ): Promise<boolean> => {
