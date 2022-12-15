@@ -44,7 +44,7 @@ textAlign: 'center'
     marginTop: '250px', 
   
     marginBottom: '250px',
-    paddingBottom: '60px'
+    //paddingBottom: '60px'
     
 
     
