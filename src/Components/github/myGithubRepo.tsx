@@ -39,11 +39,12 @@ textAlign: 'center'
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'center',
-    rowGap: '60px',
+    rowGap: '150px',
     columnGap: '60px',
-    marginTop: '60px', 
-    marginBottom: 'auto',
-    paddingBottom: '600px'
+    marginTop: '250px', 
+  
+    marginBottom: '250px',
+    paddingBottom: '60px'
     
 
     
