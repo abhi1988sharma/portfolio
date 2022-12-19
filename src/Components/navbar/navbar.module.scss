@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 .container{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;

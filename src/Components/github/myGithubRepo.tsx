@@ -30,7 +30,8 @@ const MyGithubRepos: React.FC = () => {
 fontSize: '50px',
 color: 'rgb(27, 96, 111)',
 justifyContent: 'center',
-textAlign: 'center'
+textAlign: 'center',
+marginTop: '100px'
 
 }}> My github projects</h2>
   <div style={{
@@ -39,12 +40,12 @@ textAlign: 'center'
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'center',
-    rowGap: '150px',
+    rowGap: '60px',
     columnGap: '60px',
-    marginTop: '250px', 
+    marginTop: '100px', 
   
-    marginBottom: '250px',
-    //paddingBottom: '60px'
+    marginBottom: '100px',
+    paddingBottom: '60px'
     
 
     
