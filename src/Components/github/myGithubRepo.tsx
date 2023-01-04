@@ -61,7 +61,7 @@ marginTop: '100px'
         alt="Projects Pic"
       />
       <CardContent >
-        <Typography gutterBottom variant="h5" component="div" style={{color: 'rgb(194, 237, 247)'}}>
+        <Typography gutterBottom variant="h5" component="div" style={{color: 'yellow'}}>
         {x.name}
         </Typography>
         <Typography variant="body2" style={{
