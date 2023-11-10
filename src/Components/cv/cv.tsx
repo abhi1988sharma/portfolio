@@ -16,7 +16,7 @@ const info = {
   phone: +358405040664,
   email: "abhi1988.sharma@gmail.com",
   about:
-    "My current focus is to become a Web Developer expert.I have skill of creating react App using typscript, javascript css modules and 3D game designing and making a game using Unity Game Engine and C# scripting language I have great understanding of computer fundamentals and Cisco networking."
+    "My current focus is to become a Web Developer expert.I have skill of creating MERN App using typscript, javascript css modules and 3D game designing and making a game using Unity Game Engine and C# scripting language I have great understanding of computer fundamentals and Cisco networking."
 };
 
 const Cv: React.FC = () => {
