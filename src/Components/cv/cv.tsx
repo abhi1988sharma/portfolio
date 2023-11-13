@@ -20,25 +20,21 @@ const info = {
 };
 
 const Cv: React.FC = () => {
-  
   const educationComponent = education.map(item => <CVComponent item={item} />);
-
-  const experienceComponent = experience.map(item => (
-    <CVComponent item={item} />
-  ));
+  const experienceComponent = experience.map(item => <CVComponent item={item} />);
 
   return (
     <div>
       <main>
         <section className={style.detailContainer}>
-          <section className={style.info}>
-            <InfoCard info={info} />
-            <h2>
-              <i className="fa fa-cogs" /> Skills
-            </h2>
-            <SkillsList />
-           
+          <section className={style.work}>
+            <h1>
+              <i className="fa fa-briefcase fa" /> Work Experience{" "}
+            </h1>
+            {experienceComponent}
           </section>
+
+          <hr />
 
           <section className={style.education}>
             <h1>
@@ -47,14 +43,15 @@ const Cv: React.FC = () => {
             </h1>
             {educationComponent}
           </section>
-          <hr />
-          <section className={style.work}>
-            <h1>
-              <i className="fa fa-briefcase fa" /> Work Experience{" "}
-            </h1>
-            {experienceComponent}
+
+          <section className={style.info}>
+            <InfoCard info={info} />
+            <h2>
+              <i className="fa fa-cogs" /> Skills
+            </h2>
+            <SkillsList />
           </section>
-          
+
           <section className={style.other}>
             <h1>
               {" "}
@@ -77,8 +74,12 @@ const Cv: React.FC = () => {
           </section>
         </section>
       </main>
-     
     </div>
   );
-}
+};
+
 export default Cv;
+
+
+
+

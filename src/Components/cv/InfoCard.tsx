@@ -1,4 +1,4 @@
-import React from "react";
+
 
 function InfoCard (props: { info: { imgSrc: string; name: string; profession: string; address: string; phone: number; email: string; about: string }; }) {
   return (
