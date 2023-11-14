@@ -1,5 +1,14 @@
 const experience = [
   {
+    id: 4,
+    startDate: "Aug 2023",
+    endDate: "continue...",
+    title: "Software Developer/ Helsinki City (Virittämö)",
+    description:
+      "- Develop web applications using modern technologies such as HTML5, CSS, JavaScript, and various front-end frameworks such as React. - Create back-end components and APIs using Node.js and connect them to databases. - Use version control system Git to manage code and work collaboratively within a team. - Utilize Docker to containerize web applications and microservices, ensuring consistent and reproducible deployment environments. - Collaborate with cross-functional teams, including designers, product managers, and other developers. - Design implement database solutions, working with both SQL and NoSQL databases like Azure SQL Database, Cosmos DB, or MySQL. ",
+    
+  },
+  {
     id: 3,
     startDate: "May 2018",
     endDate: "Aug 2019",

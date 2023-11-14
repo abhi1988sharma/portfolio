@@ -2,7 +2,7 @@ const education = [
   {
     id: 1,
     startDate: "Aug 2021",
-    endDate: "Continue..",
+    endDate: "June 2023",
     title: "Tieto- ja viestintätekniikan perustutkinto-(Programming)",
     description:
       "ICT & Programming from Varia Vantaan ammattiopisto"
